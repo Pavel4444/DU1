@@ -1,0 +1,120 @@
+package ukol;
+
+import javafx.event.ActionEvent;
+import javafx.event.*;
+import java.util.Observable;
+import java.util.Observer;
+
+import com.sun.glass.events.MouseEvent;
+
+import javafx.application.Platform;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.*;
+import javafx.scene.control.Button;
+import javafx.scene.control.ListView;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
+import javafx.scene.control.Tooltip;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.GridPane;
+import javafx.stage.Stage;
+
+
+import java.io.IOException;
+
+public class MainController {
+	
+	@FXML private String slovo = "";
+	@FXML private Button hadaciButton; 
+	@FXML private TextArea spravne; 
+	@FXML private TextArea spatne; 
+	@FXML private ImageView clovek; 
+	@FXML private ImageView jablko; 
+	@FXML private ImageView tuzka; 
+	@FXML private ImageView televize; 
+	@FXML private ImageView pero; 
+	@FXML private ImageView slon; 
+	@FXML private ImageView guma; 
+	
+	private int spravneBody;
+    private int spatneBody;
+	
+	
+	
+		@FXML
+		private void handleButtonAction(ActionEvent event) throws IOException {
+			
+			
+			  java.util.Random generator = new java.util.Random();
+              int nahoda = generator.nextInt(6)+1;
+              
+			if (nahoda == 1) {     
+                 slovo = "Pencil";
+                 hadaciButton.setText("Pencil");
+              }
+              if (nahoda == 2) {
+                slovo = "Rubber";
+                hadaciButton.setText("Rubber");
+              } 
+              if (nahoda == 3) {
+                slovo = "Pen";
+                hadaciButton.setText("Pen");
+              } 
+              if (nahoda == 4) {
+                slovo = "Elephant";
+                hadaciButton.setText("Elephant");
+              }
+              if (nahoda == 5) {
+                slovo = "Television";
+                hadaciButton.setText("Television");
+              } 
+              if (nahoda == 6) {
+                slovo = "Apple";
+                hadaciButton.setText("Apple");
+		      }
+		}
+		
+		
+		
+		@FXML
+		private void AkceKocka() {
+	              if (slovo.equals("Rubber")){
+                  spravneBody += 1;
+                  spravne.setText("Správnì: " + spravneBody);
+                  hadaciButton.setText("Hádej");
+              }
+              else
+                 
+              spatneBody += 1;
+              spatne.setText("Špatnì: " + spatneBody);
+              hadaciButton.setText("Hádej");
+                 
+        }
+		
+		
+		@FXML
+		public void initialize() {
+			
+			Tooltip.install(clovek, new Tooltip("Your all transactional month name"));	
+			Tooltip.install(tuzka, new Tooltip("Tužka"));
+			Tooltip.install(jablko, new Tooltip("Jablko"));
+			Tooltip.install(pero, new Tooltip("Pero"));
+			Tooltip.install(slon, new Tooltip("Slon"));
+			Tooltip.install(televize, new Tooltip("Televize"));
+			Tooltip.install(guma, new Tooltip("Guma"));
+			
+		}
+
+		
+		
+	}
+
+	 
+	
+
+	
+	
+
+

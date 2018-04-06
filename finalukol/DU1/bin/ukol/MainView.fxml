@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="601.0000999999975" prefWidth="1010.9998779296875" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="ukol.MainController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Button id="" fx:id="hadaciButton" layoutX="74.0" layoutY="473.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="71.0" prefWidth="388.0" text="Button" />
+    <TextArea fx:id="spravne" layoutX="519.0" layoutY="487.0" prefHeight="44.0" prefWidth="200.0" wrapText="true" />
+    <TextArea fx:id="spatne" layoutX="771.0" layoutY="487.0" prefHeight="44.0" prefWidth="200.0" wrapText="true" />
+    <ImageView id="pero.jpg" fx:id="pero" fitHeight="200.0" fitWidth="280.9998321533203" layoutX="710.0" layoutY="12.0" onMousePressed="#AkcePen">
+      <image>
+        <Image url="@pero.jpg" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <ImageView id="guma.jpg" fx:id="guma" fitHeight="190.0" fitWidth="253.5" layoutX="58.0" layoutY="14.0" onMousePressed="#AkceRubber">
+      <image>
+        <Image url="@guma.jpg" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <ImageView id="jablko.jpg" fx:id="jablko" fitHeight="190.0" fitWidth="304.5" layoutX="367.0" layoutY="9.0" onMousePressed="#AkceApple">
+      <image>
+        <Image url="@jablko.jpg" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <ImageView id="slon.jpg" fx:id="slon" fitHeight="221.0" fitWidth="273.0" layoutX="65.0" layoutY="219.0" onMousePressed="#AkceElephant">
+      <image>
+        <Image url="@slon.jpg" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <ImageView id="televize.jpg" fx:id="televize" fitHeight="233.0" fitWidth="326.5" layoutX="356.0" layoutY="209.0" onMousePressed="#AkceTelevision">
+      <image>
+        <Image url="@televize.jpg" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <ImageView id="tuzka.jpg" fx:id="tuzka" fitHeight="185.0" fitWidth="263.0" layoutX="710.0" layoutY="257.0" onMousePressed="#AkcePencil">
+      <image>
+        <Image url="@tuzka.jpg" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+  </children>
+</AnchorPane>

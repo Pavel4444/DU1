@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="601.0000999999975" prefWidth="1010.9998779296875" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="ukol.MainController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Button id="" fx:id="hadaciButton" layoutX="74.0" layoutY="473.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="71.0" prefWidth="388.0" text="Button" />
+    <TextArea fx:id="spravne" layoutX="519.0" layoutY="487.0" prefHeight="44.0" prefWidth="200.0" wrapText="true" />
+    <TextArea fx:id="spatne" layoutX="771.0" layoutY="487.0" prefHeight="44.0" prefWidth="200.0" wrapText="true" />
+    <Button layoutX="93.0" layoutY="78.0" mnemonicParsing="false" onAction="#AkceKocka" prefHeight="141.0" prefWidth="160.0" text="Button" />
+    <ImageView id="clovek.png" fx:id="clovek" fitHeight="141.0" fitWidth="127.0" layoutX="261.0" layoutY="101.0" onMousePressed="#AkceKocka">
+      <image>
+        <Image url="@clovek.png" title="dsadas" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+  </children>
+</AnchorPane>

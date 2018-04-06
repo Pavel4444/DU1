@@ -1,0 +1,47 @@
+package ukol;
+
+import java.awt.Button;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javafx.fxml.FXML;
+
+public class MainController {
+	
+	@FXML private String zvire = "";
+	@FXML private Button hadaciButton; 
+	
+	class Hadej implements ActionListener {
+		  public void actionPerformed (ActionEvent e) {
+			  java.util.Random generator = new java.util.Random();
+              int nahoda = generator.nextInt(6)+1;
+              
+			if (nahoda == 1) {     
+                 zvire = "koèka";
+                 hadaciButton.setText("koèka");
+              }
+              if (nahoda == 2) {
+                zvire = "králík";
+                hadaciButton.setText("králík");
+              } 
+              if (nahoda == 3) {
+                zvire = "kùò";
+                hadaciButton.setText("kùò");
+              } 
+              if (nahoda == 4) {
+                zvire = "pes";
+                hadaciButton.setText("pes");
+              }
+              if (nahoda == 5) {
+                zvire = "prase";
+                hadaciButton.setText("prase");
+              } 
+              if (nahoda == 6) {
+                zvire = "veverka";
+                hadaciButton.setText("veverka");
+		      }
+	 }}
+	
+	
+
+}
